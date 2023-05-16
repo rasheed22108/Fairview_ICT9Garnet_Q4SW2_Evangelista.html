@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seatwork 2</title>
+
+	<style>
+		.center th {
+			padding: 200px;
+
+		}
+	</style>
+</head>
+<body>
+	<p><h1 style="text-align: center;">Time Converter</h1></p>
+	<table class="center">
+<tr>
+	<th style="background-color: #afbfff">
+		Seconds
+		<p><input type="text" id="seconds"></p>
+		<input type="button" class="btn btn-success" onclick="SecondstoMinutes()" value="To minutes">
+		<input type="button" class="btn btn-success" onclick="SecondstoHours()" value="To Hours">
+		<input type="button" class="btn btn-success" onclick="SecondstoDays()" value="To Days">
+	</th>
+	<th style="background-color: #f48fb1">
+		Minutes
+		<p><input type="text" id="minutes"></p>
+		<input type="button" class="btn btn-success" onclick="MinutestoSeconds()" value="To seconds">
+		<input type="button" class="btn btn-success" onclick="MinutestoHours()" value="To Hours">
+		<input type="button" class="btn btn-success" onclick="MinutestoDays()" value="To Days">
+	</th>
+</tr>
+	</table>
+	<table class="center">
+<tr>
+		<th style="background-color: #84ffff">
+			Hours
+		<p><input type="text" id="hours"></p>
+		<input type="button" class="btn btn-success" onclick="HourstoSeconds()" value="To minutes">
+		<input type="button" class="btn btn-success" onclick="HourstoMinutes()" value="To Hours">
+		<input type="button" class="btn btn-success" onclick="HourstoDays()" value="To Days">
+		</th>
+		<th style="background-color: #00796b">
+			Days
+		<p><input type="text" id="days"></p>
+		<input type="button" class="btn btn-success" onclick="DaystoSeconds()" value="To minutes">
+		<input type="button" class="btn btn-success" onclick="DaystoMinutes()" value="To Hours">
+		<input type="button" class="btn btn-success" onclick="DaystoHours()" value="To Days">
+		</th>
+</tr>
+	</table>
+
+<script>
+	function SecondstoMinutes(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 60; 
+		alert(x / y);
+	}
+	function SecondstoHours(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 3600; 
+		alert(x / y);
+	}
+	function SecondstoDays(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 86400; 
+		alert(x / y);
+	}
+	function MinutestoSeconds(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60; 
+		alert(x * y);
+	}
+	function MinutestoHours(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60; 
+		alert(x / y);
+	}
+	function MinutestoDays(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 1440; 
+		alert(x / y);
+	}
+	function HourstoSeconds(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 3600; 
+		alert(x * y);
+	}
+	function HourstoMinutes(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 60; 
+		alert(x * y);
+	}
+	function HourstoDays(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 24; 
+		alert(x / y);
+	}
+	function DaystoSeconds(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 86400; 
+		alert(x * y);
+	}
+	function DaystoMinutes(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 1440; 
+		alert(x * y);
+	}
+	function DaystoHours(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 24; 
+		alert(x * y);
+	}
+</script>
+
+</body>
+</html>
